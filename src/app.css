@@ -1,6 +1,26 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: minimal --default;
+}
+@plugin "daisyui/theme" {
+  name: "minimal";
+  default: true;
 
+  --color-primary: #111111;
+  --color-primary-content: #ffffff;
+  --color-base-100: #111111;
+  --color-base-200: #1a1a1a;
+  --color-base-300: #222222;
+  --color-base-content: #f0f0f0;
+
+  --rounded-box: 0rem;
+  --rounded-btn: 0rem;
+  --rounded-badge: 0rem;
+  --btn-text-case: none;
+  --animation-btn: 0;
+  --animation-input: 0;
+  --border-btn: 1px;
+}
 html {
   @apply bg-black;
 }
