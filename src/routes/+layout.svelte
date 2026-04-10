@@ -12,6 +12,6 @@
 
 <Navbar />
 
-<main class="pt-[52px]">
+<main>
   {@render children()}
 </main>

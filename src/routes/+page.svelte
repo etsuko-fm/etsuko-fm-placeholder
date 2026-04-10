@@ -5,6 +5,6 @@
   import content from "../content/home.json";
 </script>
 
-<HomeHero src={content.hero.src} alt={content.hero.alt} />
+<HomeHero src={content.hero.src} alt={content.hero.alt} products={content.hero.products ?? []} />
 <HomeFeatured title={content.featured.title} body={content.featured.body} ctas={content.featured.ctas ?? []} />
 <HomeNews items={content.news} />

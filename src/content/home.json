@@ -1,7 +1,21 @@
 {
   "hero": {
-    "src": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=2000&q=85",
-    "alt": "Eterna instrument overview"
+    "src": "/eve-unsplash.jpg",
+    "alt": "etsuko.fm",
+    "products": [
+      {
+        "title": "Eterna",
+        "type": "sampler / sequencer",
+        "src": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=900&q=80",
+        "href": "/eterna"
+      },
+      {
+        "title": "Coming soon",
+        "type": "—",
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+        "href": "/eterna"
+      }
+    ]
   },
   "featured": {
     "title": "Eterna 1.2 is out",
