@@ -88,19 +88,23 @@
     <!-- ── Specs ─────────────────────────────────────────────────────────────── -->
   <ProductSection layout="single">
     <div class="w-full border-t border-base-300 pt-12">
-      <p class="text-[0.58rem] tracking-[0.25em] uppercase text-base-content/40 mb-10">Details</p>
+      <p class="text-[0.58rem] uppercase text-base-content/40 mb-10">Details</p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8">
         {#each [
-          { label: "community discussion",         value: "llllllll.co/library/eterna" },
-          { label: "docs", value: "etsuko.fm/docs/eterna" },
+          { label: "community discussion",         value: "llllllll.co/t/eterna/73584", href: "https://llllllll.co/t/eterna/73584" },
+          { label: "docs", value: "docs.etsuko.fm/eterna", href: "https://docs.etsuko.fm/eterna" },
           { label: "source code",         value: "github.com/etsuko-fm/eterna" },
           { label: "license",             value: "GPL v3" },
 
 
 ] as spec}
           <div class="flex flex-col gap-1">
-            <p class="text-[0.58rem] tracking-[0.2em] uppercase text-base-content/40">{spec.label}</p>
-            <p class="text-sm font-light text-base-content">{spec.value}</p>
+            <p class="text-[0.58rem] uppercase text-base-content/40">{spec.label}</p>
+            {#if spec.href}
+              <a href={spec.href} target="_blank" rel="noopener noreferrer" class="text-sm font-light text-base-content no-underline hover:opacity-50 transition-opacity duration-200">{spec.value}</a>
+            {:else}
+              <p class="text-sm font-light text-base-content">{spec.value}</p>
+            {/if}
           </div>
         {/each}
       </div>
@@ -108,4 +112,4 @@
   </ProductSection>
 </ProductLayout>
 <!-- ── Footer padding ────────────────────────────────────────────────────── -->
-<div class="pb-32" />
+<div class="pb-32"></div>

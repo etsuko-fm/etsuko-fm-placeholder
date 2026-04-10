@@ -8,7 +8,7 @@
   ];
 
   const navRight = [
-    { label: "Documentation", href: "https://etsuko-fm.github.io/etsuko-fm-docs/docs/eterna/", target: "_blank" },
+    { label: "Documentation", href: "https://docs.etsuko.fm", target: "_blank" },
   ];
   const socials = [
     {
@@ -38,7 +38,7 @@
 
 <nav>
   <!-- Desktop navbar -->
-  <div class="fixed top-0 left-0 right-0 z-50 bg-base-100/95 backdrop-blur-sm border-b border-base-300 grid grid-cols-[1fr_auto_1fr] items-center px-10 h-[52px]">
+  <div class="fixed top-0 left-0 right-0 z-50 bg-base-100/95 backdrop-blur-sm border-b border-base-content/20 grid grid-cols-[1fr_auto_1fr] items-center px-10 h-[52px]">
 
     <!-- Left: project links -->
     <div class="hidden md:flex items-center gap-8">
@@ -46,9 +46,9 @@
         <a
           href={item.href}
           target={item.target ?? '_self'}
-          class="text-[0.62rem] font-light tracking-[0.18em] uppercase text-base-content no-underline
+          class="text-[0.72rem] font-light uppercase text-base-content no-underline
                  relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px
-                 after:bg-base-content after:transition-all after:duration-300
+                 after:bg-base-content
                  hover:opacity-50 hover:after:w-full transition-opacity duration-200"
         >
           {item.label}
@@ -60,7 +60,7 @@
     </div>
 
     <!-- Center: logo -->
-    <a href="/" class="logo text-[0.62rem] font-normal tracking-[0.28em] uppercase text-base-content no-underline select-none">
+    <a href="/" class="logo text-[0.72rem] font-normal uppercase text-base-content no-underline select-none hover:opacity-50 transition-opacity duration-200">
       etsuko.fm
     </a>
 
@@ -70,9 +70,9 @@
         <a
           href={item.href}
           target={item.target ?? '_self'}
-          class="text-[0.62rem] font-light tracking-[0.18em] uppercase text-base-content no-underline
+          class="text-[0.72rem] font-light uppercase text-base-content no-underline
                  relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px
-                 after:bg-base-content after:transition-all after:duration-300
+                 after:bg-base-content
                  hover:opacity-50 hover:after:w-full transition-opacity duration-200"
         >
           {item.label}
@@ -112,19 +112,19 @@
       </div>
     </button>
 
-
+  </div>
   <!-- ─── Mobile dropdown menu ──────────────────────────────────────────── -->
   {#if menuOpen}
     <div class="fixed top-[52px] left-0 right-0 z-40 bg-base-100 border-b border-base-300 px-8 py-8 flex flex-col gap-6 md:hidden">
 
       <!-- Projects section -->
       <div>
-        <p class="text-[0.52rem] tracking-[0.2em] uppercase text-base-content/40 mb-3">Projects</p>
+        <p class="text-[0.52rem] uppercase text-base-content/40 mb-3">Projects</p>
         <div class="flex flex-col gap-4">
           {#each navLeft as item}
             <a
               href={item.href}
-              class="text-[0.68rem] font-light tracking-[0.15em] uppercase text-base-content no-underline hover:opacity-50 transition-opacity"
+              class="text-[0.68rem] font-light uppercase text-base-content no-underline hover:opacity-50 transition-opacity"
               on:click={() => menuOpen = false}
             >
               {item.label}
@@ -137,12 +137,12 @@
 
       <!-- Services section -->
       <div>
-        <p class="text-[0.52rem] tracking-[0.2em] uppercase text-base-content/40 mb-3">Services</p>
+        <p class="text-[0.52rem] uppercase text-base-content/40 mb-3">Services</p>
         <div class="flex flex-col gap-4">
           {#each navRight as item}
             <a
               href={item.href}
-              class="text-[0.68rem] font-light tracking-[0.15em] uppercase text-base-content no-underline hover:opacity-50 transition-opacity"
+              class="text-[0.68rem] font-light uppercase text-base-content no-underline hover:opacity-50 transition-opacity"
               on:click={() => menuOpen = false}
             >
               {item.label}
@@ -155,7 +155,7 @@
 
       <!-- Follow / social icons section -->
       <div>
-        <p class="text-[0.52rem] tracking-[0.2em] uppercase text-base-content/40 mb-3">Follow</p>
+        <p class="text-[0.52rem] uppercase text-base-content/40 mb-3">Follow</p>
         <div class="flex items-center gap-5">
           {#each socials as social}
             <a

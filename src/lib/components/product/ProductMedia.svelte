@@ -21,13 +21,13 @@
       <img
         {src}
         {alt}
-        class="w-full h-full transition-transform duration-700 ease-out hover:scale-[1.03]"
+        class="w-full h-full"
         style="object-fit: {fit};"
       />
     {:else}
       <!-- Empty state if no src passed -->
       <div class="w-full h-full flex items-center justify-center bg-base-300">
-        <span class="text-[0.6rem] tracking-[0.2em] uppercase text-base-content/30">Image</span>
+        <span class="text-[0.6rem] uppercase text-base-content/30">Image</span>
       </div>
     {/if}
   </div>

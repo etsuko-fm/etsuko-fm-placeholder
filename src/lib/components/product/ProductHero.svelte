@@ -33,7 +33,7 @@
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
     <h1 class="hero-title text-base-content">{title}</h1>
     {#if tagline}
-      <p class="text-sm font-light tracking-wide text-base-content/60 max-w-s md:text-right md:pb-3 leading-relaxed">
+      <p class="text-sm font-light text-base-content/60 max-w-s md:text-right md:pb-3 leading-relaxed">
         {tagline}
       </p>
     {/if}
