@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "src": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=2000&q=85",
+    "alt": "Eterna instrument overview"
+  },
+  "featured": {
+    "title": "Eterna 1.2 is out",
+    "body": "The latest update brings a new step-probability engine, per-voice panning, and a reworked sample import flow. Plus a handful of stability fixes and small quality-of-life improvements across the board.",
+    "ctas": [
+      { "label": "Learn more", "href": "/eterna" },
+      { "label": "Download", "href": "https://github.com/etsuko-fm/eterna" }
+    ]
+  },
+  "news": [
+    {
+      "title": "Eterna 1.2 — step probability & voice panning",
+      "body": "Each step can now carry an independent probability value. Combine with the new per-voice panning to build patterns that feel alive without losing rhythmic intent.",
+      "src": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=900&q=80",
+      "alt": "Eterna sequencer detail",
+      "cta": { "label": "Release notes", "href": "https://github.com/etsuko-fm/eterna" }
+    },
+    {
+      "title": "Eterna on norns — getting started",
+      "body": "A short walkthrough covering installation, sample loading, and the basics of the six-voice layout. Written for first-time norns users.",
+      "src": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&q=80",
+      "alt": "norns hardware",
+      "cta": { "label": "Read the docs", "href": "https://docs.etsuko.fm/eterna" }
+    },
+    {
+      "title": "Community patch exchange",
+      "body": "A thread on llllllll.co where people share Eterna patches, sample kits, and modulation setups. Worth a look if you are just starting out.",
+      "src": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&q=80",
+      "alt": "music hardware close-up",
+      "cta": { "label": "Join the discussion", "href": "https://llllllll.co/t/eterna/73584" }
+    },
+    {
+      "title": "etsuko.fm on GitHub",
+      "body": "All source code is public. Issues, pull requests, and feature discussions happen in the open.",
+      "src": "https://images.unsplash.com/photo-1525785967371-87ba44b3e6cf?w=900&q=80",
+      "alt": "modular hardware"
+    }
+  ]
+}

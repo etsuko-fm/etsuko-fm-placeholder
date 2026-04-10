@@ -93,8 +93,7 @@
         {#each [
           { label: "community discussion",         value: "llllllll.co/t/eterna/73584", href: "https://llllllll.co/t/eterna/73584" },
           { label: "docs", value: "docs.etsuko.fm/eterna", href: "https://docs.etsuko.fm/eterna" },
-          { label: "source code",         value: "github.com/etsuko-fm/eterna" },
-          { label: "license",             value: "GPL v3" },
+          { label: "github",              value: "github.com/etsuko-fm/eterna", href: "https://github.com/etsuko-fm/eterna" },
 
 
 ] as spec}
